@@ -13,7 +13,7 @@ Using it is a very simple process, just add the settings in the **elements** con
 
 ```
 const elements = {
-  **elementTag** : {
+  elementTag : {
     remove : [
       'attr_01',
       'attr_02'
@@ -23,5 +23,48 @@ const elements = {
 	  "attr_02" : "value",
     }
   }
+}
+```
+## Exemple
+
+### index.html
+
+```
+<!doctype html>
+<html>
+	<head>
+		<title>Reset Style Exemple</title>
+	</head>
+	
+	<body>
+		<div id="app">
+			<table border="1">
+				<tr>
+					<td>Col 01</td>
+					<td>Col 02</td>
+					<td>Col 03</td>
+				</tr>
+			</table>
+		</div>
+		<script src="resetstyle.min.js"></script>
+		<script>
+			ResetStyle("app");
+		</script>
+	</body>
+</html>
+```
+
+### resetstyle.js
+
+```
+const elements = {
+	table : {
+		remove : [
+			'border'
+		],
+		add : {
+		  "style" : "width:100%; background-color: #ede0bb; color: 101c29;"
+		}
+	}
 }
 ```
