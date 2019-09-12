@@ -11,7 +11,7 @@ ResetStyle is a lib written in Javascript, where we inform the elements we need 
 
 Using it is a very simple process, just add the settings in the **elements** constant and then call the **ResetStyle** function passing the parent element.
 
-```
+``` js
 const elements = {
   elementTag : {
     remove : [
@@ -56,7 +56,7 @@ const elements = {
 
 ### resetstyle.js
 
-```
+``` js
 const elements = {
 	table : {
 		remove : [
