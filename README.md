@@ -29,7 +29,7 @@ const elements = {
 
 ### index.html
 
-```
+``` html
 <!doctype html>
 <html>
 	<head>
@@ -68,3 +68,9 @@ const elements = {
 	}
 }
 ```
+
+**ResetStyle("app")**
+
+The ResetStyle("PARENT") method expects the ID of the parent element because the application will apply the changes to all child elements.
+
+Call this function whenever there is a change in the DOM, such as the completion of loading a comment list.
